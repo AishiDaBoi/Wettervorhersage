@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personen & Wetter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/ersteaufgabe.js"></script>
+    <script src="JS/zweiteaufgabe.js"></script>
+    <script src="JS/dritteaufgabe.js"></script>
+    <!-- Website funktioniert erst, wenn oben die jquery Library heruntergeladen wurde -->
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>📇 Personenverzeichnis</h1>
+    </header>
+    <div id="searchArea">
+        <input type="text" placeholder="🔍 Suche nach Name oder Telefonnummer" id="searchInput">
+        <button id="expand_all" class="btn-primary">Alle aufklappen</button>
+        <button id="close_all" class="btn-secondary">Alle zuklappen</button>
+        <ul class="personen">
+            <li> <span class="name">Christian Samegmüller </span> <span class="phone" style="display:none"><a href="tel:6327">6327</a></span> </li>
+            <li> <span class="name">Herbert Mustermann </span> <span class="phone" style="display:none"><a href="tel:3423">3423</a></span> </li>
+            <li> <span class="name">Claudia Unterweger </span> <span class="phone" style="display:none"><a href="tel:1234">1234</a></span> </li>
+            <li> <span class="name">Max Mustermann </span> <span class="phone" style="display:none"><a href="tel:7898">7898</a></span> </li>
+            <li> <span class="name">Stefan Weitblick </span> <span class="phone" style="display:none"><a href="tel:3456">3456</a></span> </li>
+            <li> <span class="name">Karin Müller </span> <span class="phone" style="display:none"><a href="tel:3678">3678</a></span> </li>
+            <li> <span class="name">Günther Rammersdorfer </span> <span class="phone" style="display:none"><a href="tel:2367">2367</a></span> </li>
+            <li> <span class="name">Christoph Teuer </span> <span class="phone" style="display:none"><a href="tel:1212">1212</a></span> </li>
+            <li> <span class="name">Günther Billig </span> <span class="phone" style="display:none"><a href="tel:5123">5123</a></span> </li>
+            <li> <span class="name">Herbert Garstenauer </span> <span class="phone" style="display:none"><a href="tel:9865">9865</a></span> </li>
+            <li> <span class="name">Philipp Danninger </span> <span class="phone" style="display:none"><a href="tel:9481">9481</a></span> </li>
+            <li> <span class="name">Markus Brandi </span> <span class="phone" style="display:none"><a href="tel:2332">2332</a></span> </li>
+        </ul>
+    </div>
+</div>
+
+<div class="weatherContainer">
+    <header>
+        <h1>🌤 Wettervorhersage</h1>
+    </header>
+    <div>
+        <input type="text" id="cityInput" placeholder="🏙 Stadt eingeben">
+        <button id="getWeatherButton" class="btn-primary">Wetter abrufen</button>
+    </div>
+    <div id="weather_area"></div>
+</div>
+
+</body>
+</html>
